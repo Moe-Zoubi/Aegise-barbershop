@@ -33,7 +33,22 @@ ul li:hover{
   text-decoration: underline;
 }
 
+.bottom-shadow{
+  box-shadow: 0 5px 3px -3px #ccc;
+}
+
 /* Navbar */
+nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+.nav-container{
+  background-color: #fff;
+}
+
 .nav-links{
   display: flex;
   justify-content: space-evenly;
@@ -41,5 +56,79 @@ ul li:hover{
 }
 
 .logo-img{
-  height: 120px;
+  height: 110px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+.show-mobile-nav{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+}
+
+.hide-mobile-nav{
+  display: none;
+}
+
+.mobile-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.mobile-logo{
+  width: 200px;
+}
+
+.bar-icon{
+  width: 40px;
+}
+
+.close-icon{
+  display: flex;
+  justify-content: end;
+  padding: 2rem;
+}
+
+.close-icon img{
+  width: 40px;
+  height: 40px;
+  transition: all  .7s ease-in-out
+}
+
+.close-icon img:hover{
+  transform: rotate(180deg);
+}
+
+.mobile-links{
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  
+}
+
+.mobile-links li{
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-links li:hover{
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width:800px){
+  .mobile-nav{
+    display: contents !important;
+  }
+  .nav-links{
+    display: none !important;
+  }
 }
