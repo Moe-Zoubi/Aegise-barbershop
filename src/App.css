@@ -37,6 +37,22 @@ ul li:hover{
   box-shadow: 0 5px 3px -3px #ccc;
 }
 
+.green-btn{
+  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  border-radius: 35px;
+  color: #fff;
+  background-color: #014d55;
+  border: 2px solid #014d55;
+  padding: 13px 43px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.green-btn:hover{
+  background-color: #000;
+}
+
 /* Navbar */
 nav{
   position: absolute;
@@ -45,14 +61,12 @@ nav{
   left: 0;
   z-index: 200;
 }
-.nav-container{
-  background-color: #fff;
-}
 
 .nav-links{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 6rem;
 }
 
 .logo-img{

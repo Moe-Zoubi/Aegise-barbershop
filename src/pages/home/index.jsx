@@ -1,3 +1,5 @@
+import "./style.css";
+import Hero from "../../components/Hero";
 
 
 
@@ -5,7 +7,7 @@ const Home = () => {
 
     return(
         <div>
-            <h1>Hello</h1>
+            <Hero />
         </div>
     )
 }
