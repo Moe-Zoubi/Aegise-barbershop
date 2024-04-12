@@ -36,6 +36,12 @@
     line-height: 1;
 }
 
+@media screen and (max-width:450px){
+    .hero-container{
+        padding: 0 1rem !important;
+    }
+
+}
 
 
 @media screen and (max-width:800px){
@@ -52,4 +58,127 @@
     .hero-title{
         font-size: 5rem;
     }
+}
+
+/*services banner*/
+.services-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.services-container::before{
+    content: "";
+    background-image: url("../../assets/services/brush-bg.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.services-text{
+    padding: 0 4rem;
+    width: 40%;
+    margin: auto;
+}
+
+
+.services-types{
+
+    --gap:2rem;
+    --line-offset: calc(var(--gap) /2);
+
+    width: 60%;
+    background-image: url("../../assets/services/haircut-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--gap);
+    overflow: hidden;
+}
+
+.services-types > .service{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.service > h3{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.service > p{
+    font-size: 1.3rem;
+}
+
+.services-types > .service::after,
+.services-types > .service::before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+}
+
+.services-types > .service::after{
+    width: 100vw;
+    height: 1px;
+    top:  calc(var(--line-offset) * -1);
+    left: 0;
+}
+
+.services-types > .service::before{
+    width: 1px;
+    height: 100vh;
+    top: 0;
+    left: calc(var(--line-offset) * -1);
+}
+
+
+@media screen and (max-width:1100px){
+    .services-container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .services-text{
+        width: 80%;
+        text-align: center;
+    }
+    .services-text > h2{
+        padding-top: 4rem !important;
+    }
+    .services-types{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .service{
+        padding: 3rem 0 !important;
+        margin: 0 !important;
+    }
+    .service > p{
+        width: 80%;
+    }
+
 }

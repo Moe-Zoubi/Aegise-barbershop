@@ -67,6 +67,13 @@ p{
   font-size: 1.5rem;
 }
 
+
+@media screen and (max-width:450px){
+  h2{
+    font-size: 3.3rem !important;
+  }
+}
+
 /* Navbar */
 nav{
   position: fixed;
