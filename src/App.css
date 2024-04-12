@@ -80,6 +80,7 @@ nav{
   top: 0;
   right: 0;
   left: 0;
+  width: 100%;
   z-index: 200;
 }
 .nav-container{
@@ -170,6 +171,10 @@ nav{
   .nav-links{
     display: none !important;
   }
+}
+
+@media screen and (max-width:800px){
+  
 }
 
 
