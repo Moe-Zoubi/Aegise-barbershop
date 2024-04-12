@@ -33,8 +33,14 @@ ul li:hover{
   text-decoration: underline;
 }
 
+.gray-blue-bg{
+  background-color: #f5f8f9;
+}
+
 .bottom-shadow{
   box-shadow: 0 5px 3px -3px #ccc;
+  background-color: #fff;
+  padding: 2rem;
 }
 
 .green-btn{
@@ -44,7 +50,7 @@ ul li:hover{
   background-color: #014d55;
   border: 2px solid #014d55;
   padding: 13px 43px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
@@ -53,19 +59,31 @@ ul li:hover{
   background-color: #000;
 }
 
+h2{
+  font-size: 4.5rem;
+}
+
+p{
+  font-size: 1.5rem;
+}
+
 /* Navbar */
 nav{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 200;
 }
+.nav-container{
+  margin: 0;
+}
 
 .nav-links{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 0;
 }
 
 .logo-img{
@@ -92,7 +110,8 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 2rem;
+  margin: 0;
 }
 
 .mobile-logo{
@@ -143,5 +162,49 @@ nav{
   }
   .nav-links{
     display: none !important;
+  }
+}
+
+
+/* about us */
+.about-container{
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 8rem 4rem;
+}
+.about-imgs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+.col-img1,.col-img2,.col-img3{
+  width: 30%;
+  height: 100%;
+}
+.col-img1 img,
+.col-img2 img,
+.col-img3 img{
+  width: 100%;
+  height: auto;
+}
+
+.about-us{
+  width: 30%;
+}
+
+.about-us .green-btn{
+  margin-top: 2rem;
+}
+
+@media screen and (max-width:1100px){
+  .about-container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-imgs, .about-us{
+    width: 100%;
   }
 }

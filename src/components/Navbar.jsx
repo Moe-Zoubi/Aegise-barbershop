@@ -26,18 +26,18 @@ const Navbar = () => {
     return(
         <>
             <nav>
-                <div className={shadow ? "nav-container bottom-shadow" : "nav-container"}>
-                    <ul className="nav-links">
+                <div className={shadow ? "nav-container" : "nav-container"}>
+                    <ul className={shadow ? "nav-links bottom-shadow" : "nav-links"}>
                         <li onClick={() => navigate("/home")}>Home</li>
                         <li onClick={() => navigate("/about")}>About</li>
                         <li onClick={() => navigate("/services")}>Services</li>
-                        <li onClick={() => navigate("/home")}><img src={logo} className="logo-img" alt="Aegise Logo"/></li>
+                        {!shadow && <li onClick={() => navigate("/home")}><img src={logo} className="logo-img" alt="Aegise Logo"/></li>}
                         <li onClick={() => navigate("/blog")}>Blog</li>
                         <li onClick={() => navigate("/testimonials")}>Testimonials</li>
                         <li onClick={() => navigate("/contacts")}>Contact</li>
                     </ul>
-                    <div className={shadow ? "mobile-nav bottom-shadow" : "mobile-nav"}>
-                        <ul className="mobile-flex">
+                    <div className="mobile-nav ">
+                        <ul className={shadow ? "mobile-flex bottom-shadow" : "mobile-flex"}>
                             <li onClick={() => navigate("/home")}><img src={mobileLogo} className="mobile-logo" alt="mobile Logo"/></li>
                             <li onClick={() => setToggleNav(!toggleNav)}><img src={bars} alt="bars Logo" className="bar-icon"/></li>
                         </ul>
