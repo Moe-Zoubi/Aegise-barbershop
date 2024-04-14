@@ -277,8 +277,6 @@
     .review-item{
         width: 80% !important;
     }
-    .review-item > h3{
-    }
     .review-item > p {
         font-size: 1.2rem;
     }
