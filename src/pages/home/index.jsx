@@ -3,6 +3,7 @@ import Hero from "../../components/Hero";
 import AboutUs from "../../components/AboutUs";
 import ServiceBanner from "../../components/ServiceBanner";
 import TestimonyBanner from "../../components/TestimonyBanner";
+import BarbersBanner from "../../components/BarbersBanner";
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             <AboutUs />
             <ServiceBanner />
             <TestimonyBanner />
+            <BarbersBanner />
         </div>
     )
 }

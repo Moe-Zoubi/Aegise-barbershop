@@ -247,7 +247,7 @@
     font-size: 1.4rem;
 }
 
-.review-item > .social-links{
+.social-links{
     padding: 0;
     margin-top: 2rem;
     width: 100%;
@@ -280,4 +280,68 @@
     .review-item > p {
         font-size: 1.2rem;
     }
+}
+
+/*barber banner*/
+.barber-banner{
+    text-align: center;
+    padding: 7rem 3rem;
+    background-image: url("../../assets/barbers/barber-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.barber-intro{
+}
+
+.barber-intro > h2{
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+
+.barber-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.barber{
+    width: min-content;
+    background-color: #fff;
+}
+
+.barber img{
+    width: auto;
+    height: 310px;
+}
+
+.barber-info{
+    padding: 2rem;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barber-info > h3{
+    font-size: 1.8rem;
+}
+
+.barber-info p{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:450px){
+    .barber-banner{
+        padding: 7rem 1rem;
+    }
+    .barber img{
+        height: 250px !important;
+    }
+
 }
