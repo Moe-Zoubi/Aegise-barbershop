@@ -8,7 +8,7 @@ const ServiceBanner = () => {
 
     
     return(
-        <section className="service-banner">
+        <div className="service-banner">
             <div className="services-container">
                 <div className="services-text">
                     <h2>OUR SERVICES</h2>
@@ -41,7 +41,7 @@ const ServiceBanner = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 
 }
