@@ -4,6 +4,7 @@ import AboutUs from "../../components/AboutUs";
 import ServiceBanner from "../../components/ServiceBanner";
 import TestimonyBanner from "../../components/TestimonyBanner";
 import BarbersBanner from "../../components/BarbersBanner";
+import BlogBanner from "../../components/BlogBanner";
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <ServiceBanner />
             <TestimonyBanner />
             <BarbersBanner />
+            <BlogBanner />
         </div>
     )
 }
